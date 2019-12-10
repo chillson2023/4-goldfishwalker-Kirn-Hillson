@@ -44,8 +44,8 @@ body, html {
     <div class="w3-right w3-hide-small">
       <a href="#about" class="w3-bar-item w3-button">Q/A</a>
       <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i>ABOUT US</a>
-      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i>MODELS</a>
-      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i>PRICING</a>
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i>PAST WORK</a>
+      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i>PRICING AND MODELS</a>
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i>CONTACT</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
@@ -230,19 +230,37 @@ body, html {
 </div>
 
 <!-- Pricing Section -->
-<div class="w3-card">
-  <p style="height: 300px; width: auto;">The Goldfish Walker Original; all the essentials.</p>
+<section id="pricing">
+    <button onclick="myFunction('Demo1')" class="w3-btn w3-block w3-orange">
+Normal button</button>
+
+<div id="Demo1" class="w3-hide w3-container w3-center w3-indigo">
+  <p>The Goldfish Walker Original; all the essentials.</p>
 </div>
-    
-    
-<div class="w3-card w3-">
-  <p style="height: 300px; width: auto;">The Goldfish Walker Deluxe; everything that you'll ever need from this site. All the essentials plus some.</p>
-</div>
-    
-<div class="w3-card">
-  <p style="height: 300px; width: auto;">The Jumbo Goldfish Walker; we know there's some bigger fish out there, bring yours along.</p>
+<button onclick="myFunction('Demo2')" class="w3-btn w3-block w3-orange">
+Left aligned and full-width</button>
+
+<div id="Demo2" class="w3-hide w3-container w3-center w3-indigo">
+  <p>The Goldfish Walker Deluxe; everything that you'll ever need from this site. All the essentials plus some.</p>
 </div>
 
+<button onclick="myFunction('Demo3')" class="w3-btn w3-block w3-orange">
+Centered and full-width</button>
+
+<div id="Demo3" class="w3-hide w3-container w3-center w3-indigo">
+  <p>The Jumbo Goldfish Walker; we know there's some bigger fish out there, bring yours along.</p>
+</div>
+<script>
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+</section>
 <!-- Contact Section -->
 <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
   <h3 class="w3-center">CONTACT</h3>
