@@ -24,7 +24,7 @@
     <div class="w3-right w3-hide-small">
       <a href="#about" class="w3-bar-item w3-button">Q/A</a>
       <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i>ABOUT US</a>
-      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i>PAST WORK</a>
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i>OUR WORK</a>
       <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i>PRICING AND MODELS</a>
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i>CONTACT</a>
     </div>
@@ -124,28 +124,19 @@
 <div class="w3-container w3-gold" style="padding:128px 16px" id="work">
   <h3 class="w3-center">OUR WORK</h3>
   <p class="w3-center w3-large">Some of our other creations:</p>
-
-  <div class="w3-row-padding" style="margin-top:64px">
-    <div class="w3-col l3 m6">
-      <img src="img/thehairhat.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The Hair Hat">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="img/dietwater.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Diet Water">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="/img/bananaslicer.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Banana Slicer">
-    </div>
-</div>
-
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
+    
+<div class="row">
+  <div class="column">
+    <img src="/img/bananaslicer.jpg" alt="Banana Slicer" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="/img/dietwater.jpg" alt="Diet Water" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="/img/thehairhat.jpg" alt="Hair Hat" style="width:100%">
   </div>
 </div>
-
+    
 <!-- Skills Section -->
 <div class="w3-container w3-light-grey w3-padding-64">
   <div class="w3-row-padding">
