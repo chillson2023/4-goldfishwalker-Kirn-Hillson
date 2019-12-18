@@ -156,24 +156,41 @@ function showDivs(n) {
 </script>
     
     
+<<<<<<< HEAD
+<!-- Pricing (Accordion and Modal)Section -->
+=======
 
 
 <!-- Pricing Section -->
+>>>>>>> ca697ba86557bf363aec93eb95d050673d671784
 <section id="pricing">
-    <button onclick="myFunction('Demo1')" class="w3-btn w3-block w3-orange">
-The Goldfish Walker Original; all the essentials.</button>
+    <button onclick="accordionFunction('Demo1')" class="w3-btn w3-block w3-orange">
+The Goldfish Walker Original</button>
 
 <div id="Demo1" class="w3-hide w3-container w3-center w3-indigo">
-  <p></p>
+<button onclick="document.getElementById('id01').style.display='block'"
+class="w3-button">All the essentials for normal-sized fishies. Click here for pricing details and images.</button>
+
+<!-- The Modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+      <span onclick="document.getElementById('id01').style.display='none'"
+      class="w3-button w3-display-topright">&times;</span>
+      <p>The Goldfish Walker Original</p>
+      <p>...</p>
+    </div>
+  </div>
 </div>
-<button onclick="myFunction('Demo2')" class="w3-btn w3-block w3-orange">
+</div>
+<button onclick="accordionFunction('Demo2')" class="w3-btn w3-block w3-orange">
 The Goldfish Walker Deluxe; everything that you'll ever need from this site. All the essentials plus some.</button>
 
 <div id="Demo2" class="w3-hide w3-container w3-center w3-indigo">
   <p></p>
 </div>
 
-<button onclick="myFunction('Demo3')" class="w3-btn w3-block w3-orange">
+<button onclick="accordionFunction('Demo3')" class="w3-btn w3-block w3-orange">
 The Jumbo Goldfish Walker; we know there's some bigger fish out there, bring yours along.</button>
 
 <div id="Demo3" class="w3-hide w3-container w3-center w3-indigo">
@@ -181,7 +198,7 @@ The Jumbo Goldfish Walker; we know there's some bigger fish out there, bring you
   <p></p>
 </div>
 <script>
-function myFunction(id) {
+function accordionFunction(id) {
   var x = document.getElementById(id);
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
