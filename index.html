@@ -93,7 +93,8 @@
 </div>
 
 <!-- Team Section -->
-<div class="w3-container" style="padding:128px 16px" id="team">
+<section class="w3-display-container">
+    <div class="w3-container" style="padding:128px 16px" id="team">
   <h3 class="w3-center">THE ORIGINAL GOLDFISH WALKERS</h3>
   <p class="w3-center w3-large">The brains behind this masterpiece.</p>
   <div class="w3-row-padding" style="margin-top:64px">
@@ -119,16 +120,21 @@
     </div>
   </div>
 </div>
-
+</section>
 
 <!-- Work Section -->
-<section class="w3-content w3-display-container w3-indigo">
-  <h3 class="w3-center w3-display-topmiddle w3-jumbo">OUR WORK</h3>
-  <p class="w3-center w3-large w3-display-middle3">Some of our other genius creations:</p>
-    <div>
-  <img class="mySlides w3-display-bottommiddle" src="img/bananaslicer.jpg" style="width:40%; height: 300px">
-  <img class="mySlides w3-display-bottommiddle" src="img/dietwater.jpg" style="width:40%; height: 300px">
-  <img class="mySlides w3-display-bottommiddle" src="img/thehairhat.jpg" style="width:40%; height: 300px">
+<section id="work" class="w3-display-container w3-indigo">
+      <div class="w3-center w3-jumbo">
+    <h3 class="w3-center w3-jumbo">OUR WORK</h3>
+  <p class="w3-center w3-large">Some of our other genius creations:</p>
+    </div>
+    <div style="padding-left: 38%">
+  <img class="mySlides" src="img/bananaslicer.jpg" style="width:40%; height: 300px">
+        <div class="text">Caption Three</div>
+  <img class="mySlides" src="img/dietwater.jpg" style="width:40%; height: 300px">
+        <div class="text">Caption Three</div>
+  <img class="mySlides" src="img/thehairhat.jpg" style="width:40%; height: 300px">
+  <div class="text">Caption Three</div>
   <button class="w3-button w3-orange w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
   <button class="w3-button w3-orange w3-display-right" onclick="plusDivs(1)">&#10095;</button>
 </div>
@@ -161,7 +167,7 @@ The Goldfish Walker Original</button>
 
 <div id="Demo1" class="w3-hide w3-container w3-center w3-indigo">
 <button onclick="document.getElementById('id01').style.display='block'"
-class="w3-button">All the essentials for normal-sized fishies. Click here for image. $35.</button>
+class="w3-button">All the essentials for normal-sized fishies. Click here for pricing details and images.</button>
 
 <!-- The Original Modal -->
 <div id="id01" class="w3-modal">
@@ -177,17 +183,14 @@ class="w3-button">All the essentials for normal-sized fishies. Click here for im
   </div>
 </div>
 </div>
-    
-    <!-- The Deluxe Modal -->
-    
-<button onclick="accordionFunction2('Demo2')" class="w3-btn w3-block w3-orange">
-The Goldfish Walker Deluxe</button>
+<button onclick="accordionFunction('Demo2')" class="w3-btn w3-block w3-orange">
+The Goldfish Walker Deluxe; everything that you'll ever need from this site. All the essentials plus some.</button>
 
 <div id="Demo2" class="w3-hide w3-container w3-center w3-indigo">
-  <p>All the a cooler looking tank for those extra cool fishies. Click for image. $50.</p>
+  <p></p>
 </div>
     
-    
+    <!-- The Deluxe Modal-->
 <div id="id01" class="w3-modal">
   <div class="w3-modal-content">
     <div class="w3-container">
@@ -200,16 +203,15 @@ The Goldfish Walker Deluxe</button>
     </div>
   </div>
 </div>
-    
-    <!-- The Jumbo Modal -->
 
-<button onclick="accordionFunction3('Demo3')" class="w3-btn w3-block w3-orange">
+<button onclick="accordionFunction('Demo3')" class="w3-btn w3-block w3-orange">
 The Jumbo Goldfish Walker; we know there's some bigger fish out there, bring yours along.</button>
 
 <div id="Demo3" class="w3-hide w3-container w3-center w3-indigo">
-  <p>We know there's some bigger fish out there, bring yours along. Click here for image. $60.</p>
+  <p>The Jumbo Goldfish Walker; we know there's some bigger fish out there, bring yours along.</p>
   <p></p>
 </div>
+     <!-- The Deluxe Modal-->
 <div id="id01" class="w3-modal">
   <div class="w3-modal-content">
     <div class="w3-container">
@@ -218,7 +220,7 @@ The Jumbo Goldfish Walker; we know there's some bigger fish out there, bring you
         
         <img src="">
       <p>The Jumbo Goldfish Walker</p>
-      <p></p>
+      <p>...</p>
     </div>
   </div>
 </div>
