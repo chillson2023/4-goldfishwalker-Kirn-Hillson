@@ -155,11 +155,11 @@ function showDivs(n) {
 </script>    
 
 <!-- Pricing Section -->
+<!-- Original -->    
 <section id="pricing">
     <button onclick="accordionFunction('Demo1')" class="w3-btn w3-block w3-orange">
 The Goldfish Walker Original</button>
 
-<div id="Demo1" class="w3-hide w3-container w3-center w3-indigo">
 <button onclick="document.getElementById('id01').style.display='block'"
 class="w3-button">All the essentials for normal-sized fishies. Click here for image. $35.</button>
 
@@ -176,17 +176,18 @@ class="w3-button">All the essentials for normal-sized fishies. Click here for im
     </div>
   </div>
 </div>
-</div>
+
     
-    <!-- The Deluxe Modal -->
+    <!-- The Deluxe Section -->
     
-<button onclick="accordionFunction2('Demo2')" class="w3-btn w3-block w3-orange">
+<button onclick="accordionFunction('Demo2')" class="w3-btn w3-block w3-orange">
 The Goldfish Walker Deluxe</button>
 
 <div id="Demo2" class="w3-hide w3-container w3-center w3-indigo">
-  <p>All the a cooler looking tank for those extra cool fishies. Click for image. $50.</p>
-</div>
-    
+  <button onclick="document.getElementById('id01').style.display='block'"
+class="w3-button">A better, sleeker looking tank, for those extra glamourous fishies. Clicker here for image. $50.</button>
+
+    <!-- Deluxe Modal -->
     
 <div id="id01" class="w3-modal">
   <div class="w3-modal-content">
@@ -200,16 +201,18 @@ The Goldfish Walker Deluxe</button>
     </div>
   </div>
 </div>
-    
-    <!-- The Jumbo Modal -->
-
-<button onclick="accordionFunction3('Demo3')" class="w3-btn w3-block w3-orange">
-The Jumbo Goldfish Walker; we know there's some bigger fish out there, bring yours along.</button>
-
-<div id="Demo3" class="w3-hide w3-container w3-center w3-indigo">
-  <p>We know there's some bigger fish out there, bring yours along. Click here for image. $60.</p>
-  <p></p>
 </div>
+    
+    <!-- The Jumbo -->
+
+<button onclick="accordionFunction('Demo3')" class="w3-btn w3-block w3-orange">
+The Jumbo Goldfish Walker</button>
+
+<button onclick="document.getElementById('id01').style.display='block'"
+class="w3-button">BUg fish deserve to be brought with you as well. Click here for image. $60.</button>
+    
+<!-- Jumbo MOdal -->
+    
 <div id="id01" class="w3-modal">
   <div class="w3-modal-content">
     <div class="w3-container">
